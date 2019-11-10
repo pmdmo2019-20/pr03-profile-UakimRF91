@@ -39,12 +39,12 @@ class AvatarActivityIntentTest {
 
     @Test
     fun shouldReturnAvatarWhenSelectMenuClicked() {
-        onView(withId(R.id.imgAvatar2)).perform(click())
+        onView(withId(R.id.imgAvatar4)).perform(click())
         onView(withId(R.id.mnuSelect)).perform(click())
-        val resultCode = testRule.activityResult.resultCode
+        val resultCode = testRule.activityResult.resultCode//PETA AQUÍ------------------------------
         val intent = testRule.activityResult.resultData
         assertThat(resultCode, `is`(RESULT_OK))
-        assertThat(intent, hasExtra("EXTRA_AVATAR", Avatar(2, R.drawable.bulbasur, "Bulbasur")))
+        assertThat(intent, hasExtra("EXTRA_AVATAR", Avatar(4, R.drawable.bulbasur, "Bulbasur")))
     }
 
 }

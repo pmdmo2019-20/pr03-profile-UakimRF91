@@ -35,7 +35,7 @@ class ProfileActivityRotationTest {
 
     @Test
     fun shouldHaveSameAvatarAfterRotation() {
-        onView(withId(R.id.imgAvatar)).perform(click())
+        onView(withId(R.id.imgAvatar)).perform(click()) //PETA AQUÍ---------------------------------
         // Perform click on AvatarActivity to send result and finish.
         val bulbasur = "Bulbasur"
         onView(withText(bulbasur)).perform(click())

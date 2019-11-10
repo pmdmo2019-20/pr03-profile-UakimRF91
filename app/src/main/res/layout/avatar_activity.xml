@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineAvatarV33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/guideline33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineAvatarV67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="@dimen/guideline67" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineAvatarH33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/guideline33" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineAvatarH67"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="@dimen/guideline67" />
+
+    <ImageView
+        android:id="@+id/imgAvatar1"
+        android:layout_width="@dimen/fit"
+        android:layout_height="@dimen/fit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pikachu"
+        app:layout_constraintBottom_toTopOf="@id/guidelineAvatarH33"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineAvatarV33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAvatar1"
+        android:layout_width="@dimen/fit"
+        android:layout_height="wrap_content"
+        android:background="@color/avatar_label_background"
+        android:gravity="center"
+        android:text="@string/lblPikachu"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar1"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar1"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar1" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar1"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar1" />
+
+    <ImageView
+        android:id="@+id/imgAvatar2"
+        android:layout_width="@dimen/fit"
+        android:layout_height="@dimen/fit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cubone"
+        app:layout_constraintBottom_toTopOf="@id/guidelineAvatarH33"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineAvatarV67"
+        app:layout_constraintStart_toStartOf="@+id/guidelineAvatarV33"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAvatar2"
+        android:layout_width="@dimen/fit"
+        android:layout_height="wrap_content"
+        android:background="@color/avatar_label_background"
+        android:gravity="center"
+        android:text="@string/lblCubone"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar2"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar2"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar2" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar2"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar2" />
+
+    <ImageView
+        android:id="@+id/imgAvatar3"
+        android:layout_width="@dimen/fit"
+        android:layout_height="@dimen/fit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/gyarados"
+        app:layout_constraintBottom_toTopOf="@id/guidelineAvatarH33"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/guidelineAvatarV67"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/lblAvatar3"
+        android:layout_width="@dimen/fit"
+        android:layout_height="wrap_content"
+        android:background="@color/avatar_label_background"
+        android:gravity="center"
+        android:text="@string/lblGyarados"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar3"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar3"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar3" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar3"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar3" />
+
+    <ImageView
+        android:id="@+id/imgAvatar4"
+        android:layout_width="@dimen/fit"
+        android:layout_height="@dimen/fit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/bulbasur"
+        app:layout_constraintBottom_toTopOf="@id/guidelineAvatarH67"
+        app:layout_constraintEnd_toStartOf="@id/guidelineAvatarV33"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineAvatarH33"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/lblAvatar4"
+        android:layout_width="@dimen/fit"
+        android:layout_height="wrap_content"
+        android:background="@color/avatar_label_background"
+        android:gravity="center"
+        android:text="@string/lblBulbasaur"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar4"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar4"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar4" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar4"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar4" />
+
+    <ImageView
+        android:id="@+id/imgAvatar5"
+        android:layout_width="@dimen/fit"
+        android:layout_height="@dimen/fit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/feebas"
+        app:layout_constraintBottom_toTopOf="@id/guidelineAvatarH67"
+        app:layout_constraintEnd_toStartOf="@id/guidelineAvatarV67"
+        app:layout_constraintStart_toStartOf="@id/guidelineAvatarV33"
+        app:layout_constraintTop_toTopOf="@id/guidelineAvatarH33" />
+
+    <TextView
+        android:id="@+id/lblAvatar5"
+        android:layout_width="@dimen/fit"
+        android:layout_height="wrap_content"
+        android:background="@color/avatar_label_background"
+        android:gravity="center"
+        android:text="@string/lblFeebas"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar5"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar5"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar5" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar5"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar5" />
+
+    <ImageView
+        android:id="@+id/imgAvatar6"
+        android:layout_width="@dimen/fit"
+        android:layout_height="@dimen/fit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/jigglypuff"
+        app:layout_constraintBottom_toTopOf="@id/guidelineAvatarH67"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelineAvatarV67"
+        app:layout_constraintTop_toTopOf="@id/guidelineAvatarH33" />
+
+    <TextView
+        android:id="@+id/lblAvatar6"
+        android:layout_width="@dimen/fit"
+        android:layout_height="wrap_content"
+        android:background="@color/avatar_label_background"
+        android:gravity="center"
+        android:text="@string/lblJigglypuff"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar6"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar6"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar6" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar6"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar6" />
+
+    <ImageView
+        android:id="@+id/imgAvatar7"
+        android:layout_width="@dimen/fit"
+        android:layout_height="@dimen/fit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/chikorita"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineAvatarV33"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/guidelineAvatarH67" />
+
+    <TextView
+        android:id="@+id/lblAvatar7"
+        android:layout_width="@dimen/fit"
+        android:layout_height="wrap_content"
+        android:background="@color/avatar_label_background"
+        android:gravity="center"
+        android:text="@string/lblChikorita"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar7"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar7"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar7" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar7"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar7" />
+
+    <ImageView
+        android:id="@+id/imgAvatar8"
+        android:layout_width="@dimen/fit"
+        android:layout_height="@dimen/fit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/giratina"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/guidelineAvatarV67"
+        app:layout_constraintStart_toStartOf="@id/guidelineAvatarV33"
+        app:layout_constraintTop_toTopOf="@id/guidelineAvatarH67" />
+
+    <TextView
+        android:id="@+id/lblAvatar8"
+        android:layout_width="@dimen/fit"
+        android:layout_height="wrap_content"
+        android:background="@color/avatar_label_background"
+        android:gravity="center"
+        android:text="@string/lblGiratina"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar8"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar8"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar8" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar8"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar8" />
+
+    <ImageView
+        android:id="@+id/imgAvatar9"
+        android:layout_width="@dimen/fit"
+        android:layout_height="@dimen/fit"
+        android:scaleType="centerCrop"
+        android:src="@drawable/pachirisu"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guidelineAvatarV67"
+        app:layout_constraintTop_toTopOf="@id/guidelineAvatarH67" />
+
+    <TextView
+        android:id="@+id/lblAvatar9"
+        android:layout_width="@dimen/fit"
+        android:layout_height="wrap_content"
+        android:background="@color/avatar_label_background"
+        android:gravity="center"
+        android:text="@string/lblPachirisu"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="@+id/imgAvatar9"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar9"
+        app:layout_constraintStart_toStartOf="@+id/imgAvatar9" />
+
+    <CheckBox
+        android:id="@+id/chkAvatar9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:checked="true"
+        app:layout_constraintEnd_toEndOf="@+id/imgAvatar9"
+        app:layout_constraintTop_toTopOf="@+id/imgAvatar9" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

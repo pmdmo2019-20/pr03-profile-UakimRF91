@@ -89,7 +89,7 @@ class ProfileActivityIntentTest {
 
     @Test
     fun shouldAvatarSendIntent() {
-        onView(withId(R.id.imgAvatar)).perform(click())
+        onView(withId(R.id.imgAvatar)).perform(click()) //PETA AQUÍ---------------------------------
         // Check sending intent
         val avatar = Avatar(1, R.drawable.pikachu, "Pikachu")
         intended(
@@ -104,7 +104,7 @@ class ProfileActivityIntentTest {
     fun shouldReceiveRightIntent() {
         // Setup the result intent. Needed if is not one of your activities.
         val resultData = Intent()
-        val avatar = Avatar(2, R.drawable.bulbasur, "Bulbasur")
+        val avatar = Avatar(4, R.drawable.bulbasur, "Bulbasur")
         resultData.putExtra(AvatarActivity.EXTRA_AVATAR, avatar)
         val result = Instrumentation.ActivityResult(
             Activity.RESULT_OK, resultData
@@ -112,7 +112,7 @@ class ProfileActivityIntentTest {
         // We simulate the result intent.
         intending(hasComponent(AvatarActivity::class.java.name)).respondWith(result)
 
-        onView(withId(R.id.imgAvatar)).perform(click())
+        onView(withId(R.id.imgAvatar)).perform(click())//PETA AQUÍ----------------------------------
         // Check result set to views.
         onView(withId(R.id.imgAvatar))
             .check(matches(DrawableMatcher(avatar.imageResId)))

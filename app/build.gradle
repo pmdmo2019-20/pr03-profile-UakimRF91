@@ -3,12 +3,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 29
     buildToolsVersion "29.0.2"
     defaultConfig {
         applicationId "es.iessaladillo.pedrojoya.profile"
         minSdkVersion 21
-        targetSdkVersion 28
+        targetSdkVersion 29
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -19,6 +19,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    androidExtensions {
+        experimental = true
+    }
+    //PARA EL KOTLION SYNTHETIC PROPERTIES
+    //En el MainActivity poner import kotlinx.android.synthetic.main.activity_main.*
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+    //PARA HACER CLASE PARCELABLE FÁCILMENTE, LO DE ANTES + ESTO
+    //Poner @Parcelize en la clase a parcelabilizar y listo
     androidExtensions {
         experimental = true
     }
@@ -43,4 +57,11 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
     androidTestImplementation 'androidx.test.espresso:espresso-intents:3.2.0'
+
+    //PARA VIEWMODEL
+    implementation "androidx.lifecycle:lifecycle-extensions:2.2.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.2.0-rc01"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.2.0-rc01"
+    implementation 'androidx.activity:activity-ktx:1.0.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-savedstate:1.0.0-rc01'
 }

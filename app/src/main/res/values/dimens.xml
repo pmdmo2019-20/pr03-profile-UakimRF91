@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <dimen name="margin">8dp</dimen>
+    <dimen name="iconSize">38dp</dimen>
+    <dimen name="fit">0dp</dimen>
+    <item name="guidelineHalf" type="dimen" format="float">0.5</item>
+    <item name="guideline33" type="dimen" format="float">0.33</item>
+    <item name="guideline67" type="dimen" format="float">0.67</item>
+    <item name="guidelineLandAvatar" type="dimen" format="float">0.275</item>
+    <item name="guideline30" type="dimen" format="float">0.3</item>
 </resources>
